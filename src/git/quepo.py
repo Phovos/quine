@@ -69,7 +69,7 @@ def initialize_repo():
 
         set_upstream_result = subprocess.run(['git', 'branch', '--set-upstream-to=origin/master', 'master'], capture_output=True, text=True)
         if set_upstream_result.returncode != 0:
-            print(f"Warning: Failed to set upstream branch: {set_upstream_result.stderr}")
+            sys.exit(f"Failed to set upstream branch: {set_upstream_result.stderr}")
 
 def quine():
     if not git_pull():
@@ -138,7 +138,7 @@ def initialize_repo():
 
         set_upstream_result = subprocess.run(['git', 'branch', '--set-upstream-to=origin/master', 'master'], capture_output=True, text=True)
         if set_upstream_result.returncode != 0:
-            print(f"Warning: Failed to set upstream branch: {set_upstream_result.stderr}")
+            sys.exit(f"Failed to set upstream branch: {set_upstream_result.stderr}")
 
 def quine():
     if not git_pull():

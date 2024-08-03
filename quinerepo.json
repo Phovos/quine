@@ -1,0 +1,12 @@
+[
+  {
+      "name": "Quine 1",
+      "branch": "quine-1",
+      "parameters": ["param1", "param2"]
+  },
+  {
+      "name": "Quine 2",
+      "branch": "quine-2",
+      "parameters": ["param3", "param4"]
+  }
+]
